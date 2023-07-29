@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('sunset.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: absolute ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%; 
+  height: 40%; 
+  background-color: rgba(156, 58, 28, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+}
+
+p {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+
+.date {
+  bottom: 0;
+  left: 0;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin: 0; 
+}
+
+
+
+
+

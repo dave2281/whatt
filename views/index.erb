@@ -7,10 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <h1> </h1>
-  <p> <%= "Сьогодні:  #{@today}" %> </p>
-  <p><%= @title %> </p>
-  <p><%= @quot_for_page%> </p>
+  <div class="container">
+    <p> <%= @title %> <%= @sampled_content%> </p>
+    <p> <%= @quot_for_page%> </p>
+  </div>
+  <div class="date">
+    <p> <%="Сьогодні: #{@today}" %> </p>
+  </div>
 </body>
 </html>
 
