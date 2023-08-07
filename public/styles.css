@@ -4,20 +4,10 @@ body {
   background-image: url('sunset.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.container {
-  position: absolute ;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25%; 
-  height: 40%; 
-  background-color: rgba(156, 58, 28, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25%;
+  height: 100vh;
 }
 
 p {
@@ -26,7 +16,6 @@ p {
   text-align: center;
 
 }
-
 
 .date {
   bottom: 0;
@@ -37,6 +26,39 @@ p {
   margin: 0; 
 }
 
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.facebook {
+  background-image: url("facebook-icon.png");
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-image: url("twitter-icon.png");
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-image: url("linkedin-icon.png");
+  background-color: #0077b5;
+}
+
+.social-icon:hover {
+  background-color: #333;
+}
 
 
 
