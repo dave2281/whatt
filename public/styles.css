@@ -1,20 +1,41 @@
+@import url('https://fontsforyou.com/fonts/h/Handform.ttf');
+
+
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url('sunset.jpg');
+  background-image: url("sunflowers.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0; 
+  font-family: "Handform";
 }
 
 p {
   font-size: 24px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
+}
 
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.date,
+.social-icons {
+  position: absolute;
+  padding: 10px;
 }
 
 .date {
@@ -26,17 +47,14 @@ p {
   margin: 0; 
 }
 
-.social-icons {
-  display: flex;
-}
-
 .social-icon {
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  margin: 0 10px;
+  margin: 0 0 10px 0;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out;
 }
@@ -44,11 +62,6 @@ p {
 .facebook {
   background-image: url("facebook-icon.png");
   background-color: #3b5998;
-}
-
-.twitter {
-  background-image: url("twitter-icon.png");
-  background-color: #1da1f2;
 }
 
 .linkedin {

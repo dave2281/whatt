@@ -8,17 +8,19 @@
 </head>
 <body>
   <div class="container">
-    <p> <%= @title %> <%= @sampled_content%> </p>
-    <p> <%= @quot_for_page%> </p>
+    <div class="social-icons">
+      <a href="#" class="social-icon facebook" target="_blank"></a>
+      <a href="#" class="social-icon linkedin" target="_blank"></a>
+    </div>
+    <div class="center-container">
+      <p> <%= @title %> <%= @sampled_content%> </p>
+      <p> <%= @quot_for_page%> </p>
+    </div>
+    <div class="date">
+      <p> <%="Сьогодні: #{@today}" %> </p>
+    </div>
   </div>
-  <div class="date">
-    <p> <%="Сьогодні: #{@today}" %> </p>
-  </div>
-  <div class="social-icons">
-    <a href="#" class="social-icon facebook" target="_blank"></a>
-    <a href="#" class="social-icon twitter" target="_blank"></a>
-    <a href="#" class="social-icon linkedin" target="_blank"></a>
-  </div>
+  
 </body>
 </html>
 
