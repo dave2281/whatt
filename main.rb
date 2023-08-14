@@ -2,7 +2,6 @@ require 'sinatra'
 require 'puma'
 
 get '/' do
-
     @today = Time.now.strftime('%Y-%m-%d')
 
     path_file = File.join(__dir__, "data", "quotes.txt")
@@ -11,7 +10,7 @@ get '/' do
         myfile = File.new(path_file)
         @content = myfile.readlines
         myfile.close
-        @sampled_content = @content.sample
+        @sampled_content = "\n" + @content.sample
     else
         "Файл не знайдено"
     end  

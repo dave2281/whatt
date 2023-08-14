@@ -3,24 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css" media="all"/>
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" media="all"/>
+  <title>Мотивационные цытаты</title>
 </head>
 <body>
-  <div class="container">
-    <div class="social-icons">
-      <a href="#" class="social-icon facebook" target="_blank"></a>
-      <a href="#" class="social-icon linkedin" target="_blank"></a>
-    </div>
-    <div class="center-container">
-      <p> <%= @title %> <%= @sampled_content%> </p>
-      <p> <%= @quot_for_page%> </p>
-    </div>
-    <div class="date">
-      <p> <%="Сьогодні: #{@today}" %> </p>
-    </div>
+  <div class="social-icons">
+    <a href="#" class="social-icon facebook" target="_blank"></a>
+    <a href="#" class="social-icon linkedin" target="_blank"></a>
   </div>
-  
+  <div class="center-container">
+    <p class="center-quote"><%= @title %> <%= @sampled_content%></p>
+  </div>
+  <div class="date">
+    <p><%="Сегодня: #{@today}" %></p>
+  </div>
 </body>
 </html>
-

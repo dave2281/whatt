@@ -1,78 +1,71 @@
-@import url('https://fontsforyou.com/fonts/h/Handform.ttf');
+@import url('https://fontsforyou.com/fonts/h/Handform.ttf'); /* импортирует шрифт с сайта*/
 
 
 body {
   background-image: url("sunflowers.jpg");
-  background-size: cover;
+  background-size: cover; /* размер фон изображения, cover - покрывает весь экран*/
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0; 
+  margin: 0px; /* Убирает отступы от тела страницы */
+  background-attachment: fixed;  /* Устанавливает фоновое изображение так, чтобы оно оставалось фиксированным при прокрутке страницы */
   font-family: "Handform";
 }
 
-p {
-  font-size: 24px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-.container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.center-content {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.date,
+/* иконки соц. сетей */
 .social-icons {
-  position: absolute;
-  padding: 10px;
-}
-
-.date {
-  bottom: 0;
-  left: 0;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  margin: 0; 
+  position: absolute; /* позиционирование элемента, который позволяет точно задать положение элемента на веб-странице относительно окна браузера или родительского контейнера*/
+  top: 0;
+  right: 0;
+  display: flex; 
+  align-items: center;
+  padding: 10px; /* отступы внутри контейнера */
 }
 
 .social-icon {
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
+  display: block; /* тип отображения элемента, блочный(есть инлайн, флекс(внутри контейнера)...) */
   width: 40px;
   height: 40px;
-  margin: 0 0 10px 0;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
+  margin: 0 10px 10px 0;
+  border-radius: 50%; /* округление краев */
+  transition: background-color 0.3s ease-in-out; /* для анимации, background-color цвет после наведения, 0.3s длительность анимации, easy in out функция смягчения анимации */
 }
 
 .facebook {
   background-image: url("facebook-icon.png");
-  background-color: #3b5998;
+  background-color: #ffffff;
 }
 
 .linkedin {
   background-image: url("linkedin-icon.png");
-  background-color: #0077b5;
+  background-color: #ffffff;
 }
 
 .social-icon:hover {
-  background-color: #333;
+  background-color: #ffffff;
 }
 
+/* Цитаты */
+.center-container {
+  position: absolute;
+  top: 330px; 
+  left: 620px;
+  /* transform: translate(620px, 350px); */ /* расположение элемента относительно краев страницы, не работает перенос */
+  text-align: center;
+}
 
+.center-quote {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  white-space: normal; /* перенос слов */
+}
 
-
+.date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
