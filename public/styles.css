@@ -30,34 +30,54 @@ body {
   transition: background-color 0.3s ease-in-out; /* для анимации, background-color цвет после наведения, 0.3s длительность анимации, easy in out функция смягчения анимации */
 }
 
-.facebook {
-  background-image: url("facebook-icon.png");
-  background-color: #ffffff;
+.github {
+  background-image: url("R.png");
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .linkedin {
-  background-image: url("linkedin-icon.png");
-  background-color: #ffffff;
+  background-image: url("linkein.png");
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
   background-color: #ffffff;
-}
+} */
 
-/* Цитаты */
+/* Цытаты */
 .center-container {
   position: absolute;
   top: 330px; 
-  left: 620px;
+  left: 750px;
   /* transform: translate(620px, 350px); */ /* расположение элемента относительно краев страницы, не работает перенос */
   text-align: center;
 }
 
 .center-quote {
-  font-size: 22px;
+  font-size: 50px;
   color: rgb(0, 0, 0);
   text-align: center;
   white-space: normal; /* перенос слов */
+}
+
+.center-author {
+  position: absolute;
+  top: 450px; 
+  left: 1350px;
+  text-align: center;
+}
+
+.under-quote-author {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  white-space: normal;
 }
 
 .date {

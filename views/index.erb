@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" media="all"/>
-  <title>Мотивационные цытаты</title>
+  <title>Мотивационные цитаты</title>
 </head>
 <body>
   <div class="social-icons">
-    <a href="#" class="social-icon facebook" target="_blank"></a>
-    <a href="#" class="social-icon linkedin" target="_blank"></a>
+    <a href="https://github.com/dave2281" class="social-icon github" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/david-berlovskyi-337773284/" class="social-icon linkedin" target="_blank"></a>
   </div>
   <div class="center-container">
-    <p class="center-quote"><%= @title %> <%= @sampled_content%></p>
+    <p class="center-quote"><%= "#{@content}"%></p>
+    <p class="under-quote-author"><%= @author %></p>
   </div>
   <div class="date">
     <p><%="Сегодня: #{@today}" %></p>

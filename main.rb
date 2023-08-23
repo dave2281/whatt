@@ -8,14 +8,17 @@ get '/' do
 
     if File.exist?(path_file)
         myfile = File.new(path_file)
-        @content = myfile.readlines
+        @content = myfile.readlines.sample
+        quotAuthor = @content.split('~')
+        @author = quotAuthor[1]
+        p @author
+        @content = quotAuthor[0]
+        p @content
         myfile.close
-        @sampled_content = "\n" + @content.sample
+        @content
     else
         "Файл не знайдено"
     end  
-
-    @title = "Цитата дня: "
 
     erb :index
 end
