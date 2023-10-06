@@ -1,14 +1,13 @@
-@import url('https://fontsforyou.com/fonts/h/Handform.ttf'); /* импортирует шрифт с сайта*/
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
 body {
-  background-image: url("sunflowers.jpg");
+  background-color: black;
   background-size: cover; /* размер фон изображения, cover - покрывает весь экран*/
   background-position: center;
   background-repeat: no-repeat;
   margin: 0px; /* Убирает отступы от тела страницы */
   background-attachment: fixed;  /* Устанавливает фоновое изображение так, чтобы оно оставалось фиксированным при прокрутке страницы */
-  font-family: "Handform";
+  font-family: 'Caveat', cursive;
 }
 
 /* иконки соц. сетей */
@@ -50,18 +49,16 @@ body {
   background-color: #ffffff;
 } */
 
-/* Цытаты */
+/* Цитаты */
 .center-container {
-  position: absolute;
-  top: 330px; 
-  left: 750px;
-  /* transform: translate(620px, 350px); */ /* расположение элемента относительно краев страницы, не работает перенос */
+  position: center;
+  transform: translate(0, 230px);  /* расположение элемента относительно краев страницы, не работает перенос */
   text-align: center;
 }
 
 .center-quote {
-  font-size: 50px;
-  color: rgb(0, 0, 0);
+  font-size: 60px;
+  color: rgb(255, 255, 255);
   text-align: center;
   white-space: normal; /* перенос слов */
 }
@@ -75,7 +72,7 @@ body {
 
 .under-quote-author {
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   white-space: normal;
 }
@@ -85,7 +82,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 20px;
-  font-size: 18px;
+  font-size: 25px;
   color: rgb(255, 255, 255);
   text-align: left;
 }
